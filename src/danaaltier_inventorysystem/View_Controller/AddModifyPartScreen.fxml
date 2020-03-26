@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="439.0" prefWidth="442.0" xmlns="http://javafx.com/javafx/8.0.211" xmlns:fx="http://javafx.com/fxml/1" fx:controller="danaaltier_inventorysystem.View_Controller.AddModifyPartScreenController">
+   <children>
+        <Label fx:id="screenNameLbl" layoutX="25.0" layoutY="25.0">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Label>
+        <RadioButton fx:id="inHouseRBtn" layoutX="200.0" layoutY="26.0" mnemonicParsing="false" onAction="#partRBtn" prefHeight="27.0" prefWidth="116.0" text="In-House">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="PartToggleGroup" />
+         </toggleGroup>
+        </RadioButton>
+        <RadioButton fx:id="outsourcedRBtn" layoutX="298.0" layoutY="26.0" mnemonicParsing="false" onAction="#partRBtn" prefHeight="27.0" prefWidth="116.0" selected="true" text="Outsourced" toggleGroup="$PartToggleGroup">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </RadioButton>
+        <Label layoutX="35.0" layoutY="85.0" prefHeight="35.0" text="ID">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <TextField fx:id="partIDTxt" disable="true" layoutX="180.0" layoutY="85.0" prefHeight="35.0" prefWidth="180.0" promptText="Auto Gen - Disabled">
+            <font>
+                <Font name="System Italic" size="16.0" />
+            </font>
+        </TextField>
+      <Label layoutX="35.0" layoutY="135.0" prefHeight="35.0" text="Name">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="partNameTxt" layoutX="180.0" layoutY="135.0" prefHeight="35.0" prefWidth="180.0" promptText="Part Name">
+         <font>
+            <Font name="System Italic" size="16.0" />
+         </font>
+      </TextField>
+      <Label layoutX="35.0" layoutY="185.0" text="Inv">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="partStockTxt" layoutX="180.0" layoutY="185.0" prefHeight="35.0" prefWidth="180.0" promptText="Inv">
+         <font>
+            <Font name="System Italic" size="16.0" />
+         </font>
+      </TextField>
+      <Label layoutX="35.0" layoutY="235.0" text="Price/Cost">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="partPriceTxt" layoutX="180.0" layoutY="235.0" prefHeight="35.0" prefWidth="180.0" promptText="Price/Cost">
+         <font>
+            <Font name="System Italic" size="16.0" />
+         </font>
+      </TextField>
+      <Label layoutX="35.0" layoutY="285.0" text="Max">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="partMaxStockTxt" layoutX="180.0" layoutY="285.0" prefHeight="35.0" prefWidth="90.0" promptText="Max">
+         <font>
+            <Font name="System Italic" size="16.0" />
+         </font>
+      </TextField>
+      <Label layoutX="279.0" layoutY="290.0" text="Min">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="partMinStockTxt" layoutX="325.0" layoutY="285.0" prefHeight="35.0" prefWidth="90.0" promptText="Min">
+         <font>
+            <Font name="System Italic" size="16.0" />
+         </font>
+      </TextField>
+      <Label fx:id="partSourcingLbl" layoutX="35.0" layoutY="335.0" text="Company Name">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="partCompanyNameTxt" layoutX="180.0" layoutY="335.0" prefHeight="35.0" prefWidth="180.0" promptText="Comp Nm">
+         <font>
+            <Font name="System Italic" size="16.0" />
+         </font>
+      </TextField>
+      <Button fx:id="partSaveBtn" layoutX="244.0" layoutY="387.0" mnemonicParsing="false" onAction="#partSaveBtn" prefHeight="38.0" prefWidth="72.0" text="Save">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="partCancelBtn" layoutX="334.0" layoutY="387.0" mnemonicParsing="false" onAction="#partCancelBtn" prefHeight="38.0" prefWidth="72.0" text="Cancel">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
